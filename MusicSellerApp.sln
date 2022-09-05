@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicSellerApp.Server", "MusicSellerApp.Server\MusicSellerApp.Server.csproj", "{E0981939-6C6E-4656-8E74-8A3CC3601089}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicSellerApp.Client", "MusicSellerApp.Client\MusicSellerApp.Client.csproj", "{BF684DA0-5DF0-48EF-AC8E-59C29CE955EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{CD2DFE5A-69C4-41C2-8120-FB9412E1F858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicSellerApp.Common", "MusicSellerApp.Common\MusicSellerApp.Common.csproj", "{7E0F0444-F16A-4EF2-A919-DCCA5FFBB49A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0981939-6C6E-4656-8E74-8A3CC3601089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0981939-6C6E-4656-8E74-8A3CC3601089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0981939-6C6E-4656-8E74-8A3CC3601089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0981939-6C6E-4656-8E74-8A3CC3601089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF684DA0-5DF0-48EF-AC8E-59C29CE955EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF684DA0-5DF0-48EF-AC8E-59C29CE955EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF684DA0-5DF0-48EF-AC8E-59C29CE955EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF684DA0-5DF0-48EF-AC8E-59C29CE955EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E0F0444-F16A-4EF2-A919-DCCA5FFBB49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E0F0444-F16A-4EF2-A919-DCCA5FFBB49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E0F0444-F16A-4EF2-A919-DCCA5FFBB49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E0F0444-F16A-4EF2-A919-DCCA5FFBB49A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
