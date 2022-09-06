@@ -10,7 +10,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
     ports:
-      - "5101:80"
+      - "8930:80"
       
   musicsellerapp.client:
     image: ${DOCKER_REGISTRY-}musicsellerappclient
@@ -21,4 +21,4 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
     ports:
-      - "8930:80"
+      - "8080:80"
