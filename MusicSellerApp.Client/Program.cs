@@ -1,13 +1,19 @@
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
-using MusicSellerApp.Client.Data;
+using MusicSellerApp.Client.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
+builder.Services.AddScoped(_ =>
+{
+    var apiUrl = new Uri("http://musicsellerapp.server/");
+    return new HttpClient()
+    {
+        BaseAddress = apiUrl
+    };
+});
 
 var app = builder.Build();
 
