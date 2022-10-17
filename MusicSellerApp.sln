@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicSellerApp.Common", "Mu
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0BFF7AF7-44F0-407E-BA90-E5BE1138DD15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicSellerApp.Client", "MusicSellerApp.Client\MusicSellerApp.Client.csproj", "{096BBE9B-0E0F-4D0F-A792-7BA025B248A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBlazorWasm", "WebBlazorWasm\WebBlazorWasm.csproj", "{096BBE9B-0E0F-4D0F-A792-7BA025B248A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{69FC16FD-E86E-47D3-9CDD-2980FC3520E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,5 +43,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {29171F44-F6B1-439B-BEEC-365A004F39FF}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{096BBE9B-0E0F-4D0F-A792-7BA025B248A0} = {69FC16FD-E86E-47D3-9CDD-2980FC3520E9}
 	EndGlobalSection
 EndGlobal

@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using MusicSellerApp.Common;
 
-namespace MusicSellerApp.Client.Services;
+namespace WebBlazorWasm.Services;
 
 public interface IWeatherForecastService
 {
