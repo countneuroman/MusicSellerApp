@@ -1,8 +1,15 @@
 version: '3.4'
 
 services:
+  sqldata:
+    image: postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=Pass@word
+    ports:
+      - "5432:1432"
+  
+  
   musicsellerapp.server:
-    image: ${DOCKER_REGISTRY-}musicsellerappserver
     build:
       context: .
       dockerfile: MusicSellerApp.Server/Dockerfile
