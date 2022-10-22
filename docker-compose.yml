@@ -11,3 +11,7 @@ services:
     build:
         context: .
         dockerfile: WebMvc/Dockerfile
+  identity.api:
+    build:
+      context: .
+      dockerfile: Identity.Api/Dockerfile

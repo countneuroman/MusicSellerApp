@@ -18,3 +18,9 @@ services:
       - ASPNETCORE_URLS=http://+:80
     ports:
       - "8080:80"
+  identity.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "8730:80"
