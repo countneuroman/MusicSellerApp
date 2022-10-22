@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql("get db connection string from appconfig"));
 
-builder.Services.AddIdentity<ApplicationUser,IdentityUser>()
+builder.Services.AddIdentity<ApplicationUser,IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
