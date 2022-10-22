@@ -3,28 +3,11 @@ version: '3.4'
 services:
   sqldata:
     image: postgres:latest
-    environment:
-      - POSTGRES_PASSWORD=Pass@word
-    ports:
-      - "5432:1432"
-  
-  
   musicsellerapp.server:
     build:
       context: .
       dockerfile: MusicSellerApp.Server/Dockerfile
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://+:80
-    ports:
-      - "8930:80"
-      
   musicsellerapp.web.mvc:
     build:
         context: .
         dockerfile: WebMvc/Dockerfile
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://+:80
-    ports:
-      - "8080:80"
