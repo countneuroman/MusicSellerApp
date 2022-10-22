@@ -12,11 +12,10 @@ services:
     ports:
       - "8930:80"
       
-  musicsellerapp.client:
-    image: ${DOCKER_REGISTRY-}musicsellerappclient
+  musicsellerapp.web.mvc:
     build:
         context: .
-        dockerfile: MusicSellerApp.Client/Dockerfile
+        dockerfile: WebMvc/Dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
